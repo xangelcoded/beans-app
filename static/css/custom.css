@@ -1,0 +1,137 @@
+/* static/css/custom.css */
+/* custom.css */
+
+/* 1) Ensure the font is applied *after* everything else */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* 2) Globally apply it to any pixel-ui container */
+.pixel-ui,
+.pixel-ui * {
+  font-family: 'Press Start 2P', monospace !important;
+}
+
+/* 1. Color Palette & Typography */
+:root {
+  --coffee-brown: #6F4E37;
+  --latte-cream:  #FFF8E7;
+  --copper-accent: #C19A6B;
+  --dark-roast:   #3E2723;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  color: var(--dark-roast);
+  background-color: var(--latte-cream);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  color: var(--coffee-brown);
+}
+
+/* 2. Sidebar & Brand */
+.main-sidebar {
+  background-color: var(--coffee-brown) !important;
+}
+
+.brand-link {
+  background-color: var(--copper-accent) !important;
+  color: var(--latte-cream) !important;
+}
+
+.brand-link .brand-image {
+  opacity: .9;
+}
+
+/* 3. Buttons */
+.btn-coffee {
+  background-color: var(--coffee-brown);
+  color: var(--latte-cream);
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: transform .1s ease-in-out, box-shadow .1s ease-in-out;
+}
+
+.btn-coffee:hover,
+.btn-coffee:focus {
+  transform: scale(1.03);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* 4. Cards & Boxes */
+.card,
+.small-box {
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 5. Tables */
+.table thead {
+  background-color: var(--coffee-brown);
+  color: var(--latte-cream);
+}
+
+.table tbody tr:hover {
+  background-color: rgba(111,78,55,0.1);
+}
+
+/* 6. Alerts (Result Panels) */
+.alert-good {
+  border-left: 4px solid #28a745;
+  background-color: rgba(40,167,69,0.1);
+}
+
+.alert-ripe {
+  border-left: 4px solid #ffc107;
+  background-color: rgba(255,193,7,0.1);
+}
+
+.alert-underripe {
+  border-left: 4px solid #ffd54f;
+  background-color: rgba(255,213,79,0.1);
+}
+
+.alert-defective {
+  border-left: 4px solid #dc3545;
+  background-color: rgba(220,53,69,0.1);
+}
+
+/* 7. Forms & Inputs */
+.form-range {
+  accent-color: var(--coffee-brown);
+}
+
+.form-control:focus {
+  border-color: var(--coffee-brown);
+  box-shadow: 0 0 0 .2rem rgba(111,78,55,0.25);
+}
+
+/* 8. Modals */
+.modal-content {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* 9. Toast Notifications */
+.toast {
+  border-radius: .5rem;
+  background-color: var(--coffee-brown);
+  color: var(--latte-cream);
+}
+
+/* 10. Utility */
+.text-coffee {
+  color: var(--coffee-brown) !important;
+}
+
+.bg-latte {
+  background-color: var(--latte-cream) !important;
+}
+.content-wrapper {
+  /* one level up from static/css → static/ then img/ */
+  background: url('../img/pixel-coffee-bg.png') center/cover no-repeat;
+}
