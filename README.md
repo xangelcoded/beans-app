@@ -16,8 +16,7 @@
 A. GitHub Method:
 ------------------
 1. Go to the GitHub repository (if available):  
-   👉 https://github.com/YOUR_USERNAME/beans-classifier
-
+   👉 https://github.com/xangelcoded/beans-app.git
 2. Click the green [Code] button → choose [Download ZIP]
 
 3. Extract the ZIP file. It should contain:
